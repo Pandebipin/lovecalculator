@@ -1,0 +1,168 @@
+
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+ box-sizing: border-box;
+ padding: 20px;
+overflow: hidden;
+}
+.bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://files.oaiusercontent.com/file-BDvOl43OEyfHgHovRgNHWifD?se=2024-08-16T08%3A58%3A32Z&sp=r&sv=2023-11-03&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3719c818-efef-4917-922a-cc75461a0e35.webp&sig=g5jVeLHm4N/Y/SqhBHksvr%2BAxvI8RhEVx6wcsKxfaQ4%3D");
+  background-position: center;
+  background-size: cover;
+  filter: blur(4px); 
+  z-index: -1;
+}
+.p{
+  /* color: #fff; */
+  font-size: large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100%;
+  max-width: 400px;
+  padding-bottom: 1rem;
+}
+.app{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px gray;
+  width: 100%;
+  max-width: 600px;
+  gap: 1.3rem;
+}
+.h1{
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  /* color: white; */
+  text-align: center;
+}
+.input{
+  width: 100%;
+  /* width: calc(100%-20px); */
+  padding: 10px 17px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  border: 1px solid skyblue;
+  outline: none;
+}
+.submit{
+  padding: 10px 24px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.submit:hover{
+  background-color: darkblue;
+}
+.inputs{
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 300px;
+}
+love-card {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ff6b6b;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.love-card .h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.love-card .quote {
+  font-size: 20px;
+  margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .app {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .h1 {
+    font-size: 20px;
+  }
+
+  .p {
+    font-size: medium;
+    width: 100%;
+  }
+
+  .inputs {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .submit {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 18px;
+  }
+
+  .input {
+    padding: 8px 15px;
+  }
+
+  .submit {
+    width: 100%;
+    padding: 8px 0;
+  }
+  .p{
+    font-size: small;
+  }
+}
+.error-message{
+  color: red;
+  font-size: 18px;
+}
